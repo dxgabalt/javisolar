@@ -1,0 +1,599 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #000631;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.menu-toggle {
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f39b06;
+}
+
+.cta-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp {
+    background-color: #25d366;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #f39b06;
+    color: #fff;
+}
+
+.cart-icon {
+    font-size: 1.5em;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Agrega este código al final de tu archivo styles.css */
+
+/* Añade este bloque CSS al final de tu archivo de estilos */
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #fff;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    .nav-links ul li {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+
+
+/* Hero Section styles */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Estilos para la sección de servicios */
+.services {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services h2 {
+    color: #000;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.service {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service i {
+    font-size: 48px;
+    color: #f39b06;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 1.5em;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.service p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .service {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Contact Section styles */
+.contact {
+    padding: 50px 0;
+}
+
+.contact h2 {
+    text-align: center;
+    color: #f39b06;
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-icons {
+    text-align: center;
+}
+
+.contact-icon {
+    margin: 10px;
+}
+
+.contact-icon i {
+    font-size: 1.5em;
+    margin-right: 5px;
+    color: #28a4da;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000631;
+    color: #ffffff;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer-section h3 {
+    color: #f39b06;
+}
+
+.social-media a {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .nav-links ul {
+        display: none;
+        position: absolute;
+        background-color: #000631;
+        width: 100%;
+        text-align: center;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .nav-links ul.active {
+        display: block;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+}
+
+/* Estilos para la sección de inicio */
+.hero {
+    background-color: #000631;
+    color: #fff;
+    text-align: center;
+    padding: 135px 0;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero a.btn-whatsapp {
+    background-color: #28a4da;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero a.btn-whatsapp:hover {
+    background-color: #f39b06;
+}
+
+
+/* Services Section styles */
+.services {
+    background-color: #fff;
+    color: #000631;
+    padding: 50px 0;
+}
+
+.services h2 {
+    text-align: center;
+    color: #000631;
+}
+
+.service {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service i {
+    font-size: 3em;
+    color: #28a4da;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la sección de proyectos */
+.projects {
+    background-color: #fff;
+    color: #000;
+    padding: 30px 0;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.project {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1.2em;
+}
+
+/* Estilos para la sección de beneficios */
+.benefits {
+    background-color: #f39b06;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.benefits h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.benefit {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.benefit i {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.benefit h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 1.2em;
+}
+
+/* Estilos para la sección de testimonios */
+.testimonials {
+    background-color: #ffffff;
+    color: #000631;
+    padding: 45px 0;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.testimonial {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.client-name {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* Estilos para la sección de contacto */
+.contact {
+    background-color: #ffffff;
+    color: #000631;
+    padding: 20px 0;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.contact-icon {
+    text-align: center;
+    max-width: 300px;
+}
+
+.contact-icon i {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-icon p {
+    font-size: 1.2em;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f39b06;
+    color: #ffffff;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e08a05;
+}
+
+/* Agrega estilos adicionales según sea necesario */
+
+
+/* Footer Section styles */
+footer {
+    background-color: #000631;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.payments {
+    background-color: #000631;
+    color: #fff;
+    text-align: center;
+}
+
+.payments h2 {
+    color: #fff;
+}
+
+.payment-icons {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h3 {
+    color: #fff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 2em;
+    margin-right: 20px;
+}
+
+/* Add more styles as needed */
+
+/* Estilos para personalizar la barra de desplazamiento en WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f39b06;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+/* Estilos para personalizar la barra de desplazamiento en Firefox */
+/* También puedes agregar estilos adicionales para otros navegadores según sea necesario */
+/* Recuerda que estos estilos pueden no ser compatibles con todos los navegadores */
