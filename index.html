@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
 
     <nav class="navbar">
@@ -28,20 +30,21 @@
                 </ul>
             </div>
             <div class="cta-buttons">
-                <a href="https://wa.me/50589442250" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="https://wa.me/50589442250" target="_blank" class="btn btn-whatsapp2"><i
+                        class="fab fa-whatsapp"></i> WhatsApp</a>
                 <a href="#" class="btn btn-secondary"><i class="fas fa-bolt"></i> Cotizar Ahora</a>
                 <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
             </div>
         </div>
     </nav>
-    
+
 
     <!-- Hero Section -->
     <section id="inicio" class="hero">
         <div class="containe">
             <h2>Energía Sin Límites</h2>
             <p>Transformamos la energía solar en soluciones sostenibles para hogares y negocios.</p>
-            <a href="https://wa.me/+50589442250" target="_blank" class="btn btn-whatsapp">¡Contáctanos por WhatsApp!</a>
+            <a href="https://wa.me/+50589442250" target="_blank" class="btn btn-whatsapp">¡Comienza tu proyecto ahora!</a>
         </div>
     </section>
 
@@ -62,12 +65,13 @@
             <div class="service">
                 <i class="fas fa-lightbulb"></i>
                 <h3>Asesoramiento en Eficiencia Energética</h3>
-                <p>Te guiaremos para optimizar el consumo de energía y reducir costos con nuestras soluciones de eficiencia.</p>
+                <p>Te guiaremos para optimizar el consumo de energía y reducir costos con nuestras soluciones de
+                    eficiencia.</p>
             </div>
             <!-- Agrega más servicios según sea necesario -->
         </div>
     </section>
-    
+
 
     <!-- Proyectos Section -->
     <section id="proyectos" class="projects">
@@ -94,7 +98,8 @@
             <div class="benefit">
                 <i class="fas fa-sun"></i>
                 <h3>Renovable y Sostenible</h3>
-                <p>La energía solar es una fuente renovable y sostenible que reduce la dependencia de combustibles fósiles.</p>
+                <p>La energía solar es una fuente renovable y sostenible que reduce la dependencia de combustibles
+                    fósiles.</p>
             </div>
             <div class="benefit">
                 <i class="fas fa-money-bill-wave"></i>
@@ -116,12 +121,14 @@
             <h2>Lo que dicen nuestros clientes</h2>
             <div class="testimonial">
                 <img src="testimonio-1.jpg" alt="Cliente 1">
-                <p>"Javi Solar ha transformado por completo nuestra forma de obtener energía. ¡Altamente recomendados!"</p>
+                <p>"Javi Solar ha transformado por completo nuestra forma de obtener energía. ¡Altamente recomendados!"
+                </p>
                 <p class="client-name">Ana Rodríguez</p>
             </div>
             <div class="testimonial">
                 <img src="testimonio-2.jpg" alt="Cliente 2">
-                <p>"Excelente servicio al cliente y una instalación impecable. Estamos muy contentos con nuestro sistema solar."</p>
+                <p>"Excelente servicio al cliente y una instalación impecable. Estamos muy contentos con nuestro sistema
+                    solar."</p>
                 <p class="client-name">Carlos Méndez</p>
             </div>
             <!-- Agrega más testimonios según sea necesario -->
@@ -159,6 +166,82 @@
         </div>
     </section>
 
+    <!-- Preguntas Frecuentes Section -->
+    <section id="faq" class="faq">
+        <div class="containe">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-item">
+                <h3>¿Cómo funciona la instalación de paneles solares?</h3>
+                <p>La instalación de paneles solares implica...</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Cuánto tiempo dura la vida útil de un sistema solar?</h3>
+                <p>Un sistema solar típicamente tiene una vida útil de...</p>
+            </div>
+            <!-- Agrega más preguntas según sea necesario -->
+        </div>
+    </section>
+
+    <!-- Mapa Section -->
+    <section id="mapa" class="mapa">
+        <div class="containe">
+            <h2>Nuestra Ubicación</h2>
+            <div class="map">
+                <!-- Agrega aquí el código de integración del mapa (puede ser un iframe de Google Maps, por ejemplo) -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d972.1556068653417!2d-85.92077083657976!3d12.931971799033175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sni!4v1701898637621!5m2!1sen!2sni"
+                    width="400" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculadora Section -->
+    <section id="calculadora" class="calculadora">
+        <div class="containe">
+            <h2>Calculadora de Ahorro de Energía Solar</h2>
+            <p>Descubre cuánto podrías ahorrar con un sistema de energía solar.</p>
+    
+            <div class="calculator-form">
+                <label for="consumo">Consumo actual de electricidad (kWh/mes):</label>
+                <input type="number" id="consumo" name="consumo" required>
+    
+                <label for="tarifa">Tarifa actual de electricidad (USD/kWh):</label>
+                <input type="number" id="tarifa" name="tarifa" required>
+    
+                <button onclick="calcularAhorro()">Calcular Ahorro</button>
+    
+                <div id="resultado"></div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Subsidios/Incentivos Section -->
+    <section id="subsidios" class="subsidios">
+        <div class="containe">
+            <h2>Subsidios e Incentivos</h2>
+            <p>Descubre las opciones de subsidios e incentivos disponibles para proyectos de energía solar.</p>
+            
+            <div class="subsidios-info">
+                <div class="subsidio-item">
+                    <h3>Subsidio Federal</h3>
+                    <p>El gobierno federal ofrece un subsidio del XX% para proyectos de energía solar. Este programa está diseñado para...</p>
+                </div>
+                
+                <div class="subsidio-item">
+                    <h3>Incentivo Estatal</h3>
+                    <p>El estado también brinda incentivos para la instalación de sistemas solares. Puedes beneficiarte de...</p>
+                </div>
+                
+                <!-- Agrega más información sobre otros subsidios e incentivos -->
+            </div>
+        </div>
+    </section>
+    
+
+
+
     <!-- Footer -->
     <footer>
         <section id="pagos" class="payments">
@@ -195,7 +278,8 @@
                 <div class="footer-section">
                     <h3>Síguenos</h3>
                     <div class="social-media">
-                        <a href="https://www.facebook.com/profile.php?id=100083575050274" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100083575050274" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
                         <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
@@ -206,18 +290,29 @@
             <p>&copy; 2023 Javi Solar. Todos los derechos reservados.</p>
         </div>
     </footer>
-<script>
-// Añade este script JavaScript al final de tu archivo
+    <script>
+        // Añade este script JavaScript al final de tu archivo
 
-document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
 
-    menuToggle.addEventListener('click', function () {
-        navLinks.classList.toggle('show');
-    });
-});
+            menuToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+            });
+        });
 
-</script>
+    function calcularAhorro() {
+    var consumo = document.getElementById('consumo').value;
+    var tarifa = document.getElementById('tarifa').value;
+
+    // Realiza cálculos aquí según la lógica de tu calculadora
+
+    // Muestra el resultado
+    var resultadoElement = document.getElementById('resultado');
+    resultadoElement.innerHTML = 'Tu posible ahorro es de $XXX por mes.';
+}
+    </script>
 </body>
+
 </html>
